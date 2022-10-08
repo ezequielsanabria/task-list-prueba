@@ -20,4 +20,21 @@ tasks: Task[] = [];
       this.tasks = tasks
     ));
   }
+
+  deleteTask(task: Task){
+    this.taskservice.deleteTask(task).subscribe(()=>(
+      this.tasks = this.tasks.filter(t=>t.id !== task.id)
+    ))
+  }
+
+  toggleRemainder(task: Task){
+   task.remainder = !task.remainder,
+  this.taskservice.updatetaskRemainder(task).subscribe();
+   
+  }
+  AddTask(task: Task){
+   this.taskservice.AddTask(task).subscribe((task)=>(
+    this.tasks.push(task)
+   ));
+  }
 }

@@ -8,7 +8,8 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { BottomComponent } from './componentes/bottom/bottom.component';
 import { TaskComponent } from './componentes/task/task.component';
 import { TaskItemComponent } from './componentes/task-item/task-item.component';
-
+import { AddTaskComponent } from './componentes/add-task/add-task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { TaskItemComponent } from './componentes/task-item/task-item.component';
     HeaderComponent,
     BottomComponent,
     TaskComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
