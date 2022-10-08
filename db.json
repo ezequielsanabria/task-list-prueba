@@ -1,15 +1,15 @@
 {
   "task": [
     {
-      "text": "nueva tarea",
-      "day": "mañana",
+      "text": "neva tarea",
+      "day": "20/03/2022",
       "remainder": true,
       "id": 1
     },
     {
-      "text": "nueva tarea",
-      "day": "mañana",
-      "remainder": false,
+      "text": "boostrap",
+      "day": "20/04/2022",
+      "remainder": true,
       "id": 2
     }
   ]

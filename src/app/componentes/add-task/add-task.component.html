@@ -1,4 +1,7 @@
-<form class="add-form" (ngSubmit)="onSubmit()">
+<form 
+class="add-form"
+ (ngSubmit)="onSubmit()"
+ *ngIf="showAddTask">
     <div class="form-control">
         <label for="text">task</label>
         <input 
@@ -7,7 +10,7 @@
         id="text" 
         placeholder="add Task Texto "
         [(ngModel)]="text"
-        />
+        >
     </div>
 
     <div class="form-control">
@@ -18,7 +21,7 @@
           id="day"
            placeholder="add day & time"
            [(ngModel)]="day"
-           />
+           >
     </div>
 
     <div class="form-control form-control-check">
@@ -28,7 +31,7 @@
           name="reminder"
            id="remainder"
            [(ngModel)]="remainder"
-           />
+           >
     </div>
 
     <input type="submit" value="Save task" class="btn btn-block">

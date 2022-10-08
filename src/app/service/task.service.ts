@@ -20,7 +20,6 @@ export class TaskService {
   ) { }
 
   getTasks(): Observable<Task[]>{
-
     return this.http.get<Task[]>(this.apiUrl)
     
   };
