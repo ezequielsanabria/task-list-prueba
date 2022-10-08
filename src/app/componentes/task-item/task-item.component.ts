@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Task } from 'src/app/task';
+import { Task } from '../../task';
 import { TASKS } from 'src/app/mosck-task';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
